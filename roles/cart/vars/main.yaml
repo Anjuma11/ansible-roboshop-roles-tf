@@ -1,0 +1,2 @@
+REDIS_HOST: redis.anjuma.store
+CATALOGUE_HOST: catalogue.anjuma.store

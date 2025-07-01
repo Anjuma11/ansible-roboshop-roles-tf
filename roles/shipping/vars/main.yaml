@@ -1,0 +1,4 @@
+CART_HOST: cart.anjuma.store
+MYSQL_HOST: mysql.anjuma.store
+MYSQL_ROOT_USER: root
+MYSQL_ROOT_PASSWORD: RoboShop@1

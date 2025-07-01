@@ -1,0 +1,29 @@
+- name: stopping the service
+  ansible.builtin.service:
+    name: "{{component}}"
+    state: stopped
+
+- name: removing /app directory
+  ansible.builtin.file:
+    path: /app
+    state: absent
+
+- name: creating /app directory
+  ansible.builtin.file:
+    path: /app
+    state: directory
+
+- name: download application code
+  ansible.builtin.unarchive:
+    src: "https://roboshop-artifacts.s3.amazonaws.com/{{component}}-v{{version}}.zip"
+    dest: /app
+    remote_src: yes
+
+- name: install dependencies
+  community.general.npm:
+  path: /app
+
+- name: restart the {{component}}
+  ansible.builtin.service:
+    name: "{{component}}"
+    state: restarted

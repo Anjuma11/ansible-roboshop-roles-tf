@@ -1,0 +1,2 @@
+MONGODB_HOST: mongodb.anjuma.store
+REDIS_HOST: redis.anjuma.store

@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.anjuma.store
+CART_HOST: cart.anjuma.store
+USER_HOST: user.anjuma.store
+PAYMENT_HOST: payment.anjuma.store
+SHIPPING_HOST: shipping.anjuma.store
