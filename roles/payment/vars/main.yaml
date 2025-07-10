@@ -1,5 +1,5 @@
-CART_HOST: cart.anjuma.store
-USER_HOST: user.anjuma.store
-RABBITMQ_HOST: rabbitmq.anjuma.store
+CART_HOST: cart.backend-{{ env }}.anjuma.store
+USER_HOST: user.backend-{{ env }}anjuma.store
+RABBITMQ_HOST: rabbitmq-{{ env }}.anjuma.store
 RABBITMQ_USER: roboshop
 RABBITMQ_PASSWORD: roboshop123

@@ -1,2 +1,2 @@
-MONGODB_HOST: mongodb.anjuma.store
-REDIS_HOST: redis.anjuma.store
+MONGODB_HOST: mongodb-{{ env }}.anjuma.store
+REDIS_HOST: redis-{{ env }}.anjuma.store
